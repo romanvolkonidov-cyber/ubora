@@ -1,15 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Landscaping service photo placeholder">
-  <defs><linearGradient id="la" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#0F766E"/></linearGradient></defs>
-  <rect width="800" height="600" fill="url(#la)"/>
-  <circle cx="650" cy="120" r="80" fill="#FCD34D" opacity="0.9"/>
-  <path d="M0 420 Q200 380 400 420 T800 390 L800 600 L0 600 Z" fill="#064E3B"/>
-  <path d="M0 480 Q200 440 400 480 T800 460 L800 600 L0 600 Z" fill="#022C22" opacity="0.7"/>
-  <g transform="translate(160 320)"><rect x="-8" y="80" width="16" height="80" fill="#92400E"/><circle cx="0" cy="60" r="60" fill="#064E3B"/><circle cx="-24" cy="40" r="40" fill="#047857"/><circle cx="24" cy="40" r="40" fill="#047857"/></g>
-  <g transform="translate(320 360)"><rect x="-6" y="60" width="12" height="60" fill="#92400E"/><circle cx="0" cy="40" r="44" fill="#064E3B"/></g>
-  <g transform="translate(560 340)"><rect x="-6" y="68" width="12" height="68" fill="#92400E"/><circle cx="0" cy="44" r="52" fill="#065F46"/></g>
-  <g transform="translate(60 540)" font-family="Plus Jakarta Sans, sans-serif">
-    <g transform="translate(0 -16)"><rect x="-16" y="-14" width="32" height="24" rx="4" fill="none" stroke="#fff" stroke-width="2.5"/><circle cx="0" cy="-2" r="7" fill="none" stroke="#fff" stroke-width="2.5"/><rect x="-10" y="-20" width="10" height="6" rx="2" fill="#fff"/></g>
-    <text x="36" y="-8" fill="#fff" font-size="28" font-weight="700">Landscaping &amp; Gardening</text>
-    <text x="36" y="18" fill="rgba(255,255,255,0.78)" font-family="Inter, sans-serif" font-size="14">Replace with a real photo · images/photos/landscaping.svg</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Landscaping and gardening illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5EEAD4"/>
+      <stop offset="55%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FCD34D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+
+  <!-- Sun glow -->
+  <circle cx="640" cy="140" r="220" fill="url(#sunGlow)"/>
+  <circle cx="640" cy="140" r="62" fill="#FCD34D"/>
+  <circle cx="640" cy="140" r="44" fill="#FEF3C7" opacity="0.8"/>
+
+  <!-- Distant hills -->
+  <path d="M0 380 Q200 320 400 360 T800 320 L800 600 L0 600 Z" fill="#0F766E" opacity="0.55"/>
+  <path d="M0 420 Q200 380 400 410 T800 380 L800 600 L0 600 Z" fill="#0B5A52" opacity="0.7"/>
+
+  <!-- Ground -->
+  <path d="M0 460 Q200 440 400 460 T800 450 L800 600 L0 600 Z" fill="url(#ground)"/>
+
+  <!-- Hedge line -->
+  <g fill="#047857">
+    <circle cx="60" cy="455" r="22"/><circle cx="100" cy="450" r="22"/><circle cx="140" cy="455" r="22"/>
+    <circle cx="660" cy="450" r="22"/><circle cx="700" cy="455" r="22"/><circle cx="740" cy="450" r="22"/>
+  </g>
+
+  <!-- Big tree -->
+  <g transform="translate(180 360)">
+    <rect x="-9" y="55" width="18" height="80" rx="2" fill="#7C2D12"/>
+    <circle cx="0" cy="35" r="62" fill="#064E3B"/>
+    <circle cx="-30" cy="20" r="38" fill="#047857"/>
+    <circle cx="30" cy="20" r="38" fill="#047857"/>
+    <circle cx="0" cy="-4" r="36" fill="#10B981"/>
+    <circle cx="14" cy="34" r="28" fill="#065F46"/>
+    <circle cx="-18" cy="40" r="22" fill="#065F46"/>
+  </g>
+
+  <!-- Medium tree -->
+  <g transform="translate(360 400)">
+    <rect x="-6" y="34" width="12" height="56" rx="2" fill="#7C2D12"/>
+    <circle cx="0" cy="20" r="44" fill="#064E3B"/>
+    <circle cx="-18" cy="6" r="28" fill="#047857"/>
+    <circle cx="18" cy="6" r="28" fill="#047857"/>
+    <circle cx="0" cy="-12" r="26" fill="#10B981"/>
+  </g>
+
+  <!-- Tall slim tree -->
+  <g transform="translate(520 360)">
+    <rect x="-5" y="50" width="10" height="80" rx="2" fill="#7C2D12"/>
+    <ellipse cx="0" cy="20" rx="32" ry="60" fill="#065F46"/>
+    <ellipse cx="0" cy="0" rx="22" ry="40" fill="#047857"/>
+  </g>
+
+  <!-- Shrubs / flower beds -->
+  <g transform="translate(80 520)">
+    <ellipse cx="0" cy="0" rx="34" ry="14" fill="#10B981"/>
+    <circle cx="-8" cy="-6" r="4" fill="#F59E0B"/>
+    <circle cx="6" cy="-8" r="4" fill="#F59E0B"/>
+    <circle cx="14" cy="-4" r="4" fill="#FCD34D"/>
+  </g>
+  <g transform="translate(620 530)">
+    <ellipse cx="0" cy="0" rx="42" ry="16" fill="#10B981"/>
+    <circle cx="-12" cy="-6" r="4" fill="#FCD34D"/>
+    <circle cx="0" cy="-10" r="4" fill="#F59E0B"/>
+    <circle cx="14" cy="-6" r="4" fill="#FCD34D"/>
+    <circle cx="-20" cy="-2" r="3" fill="#F59E0B"/>
+  </g>
+
+  <!-- Curved path -->
+  <path d="M400 600 Q380 540 420 500 T440 440 Q450 410 440 380" stroke="#FCD34D" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.35"/>
+
+  <!-- Light grass blades -->
+  <g stroke="#10B981" stroke-width="1.5" opacity="0.6">
+    <path d="M260 540 V552"/><path d="M270 545 V555"/><path d="M290 542 V556"/>
+    <path d="M460 552 V564"/><path d="M480 548 V562"/><path d="M495 554 V566"/>
   </g>
 </svg>

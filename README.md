@@ -23,14 +23,8 @@ A static, multi-page marketing website for Ubora Services Limited — a Kenyan i
         ├── cleaning-vacuum.webp   # Vacuuming an executive office
         ├── fumigation.webp        # Technician in PPE treating a drain
         ├── waste.webp             # Branded waste-handling truck
-        └── landscaping.svg        # Branded placeholder (no photo yet)
+        └── landscaping.svg        # Brand-styled illustration
 ```
-
-## Photos
-
-Real photos are used everywhere except landscaping. To add a landscaping photo,
-drop e.g. `images/photos/landscaping.webp` and change the `src` in
-`services.html` from `landscaping.svg` → `landscaping.webp`.
 
 ## Design System
 
