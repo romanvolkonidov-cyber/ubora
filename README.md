@@ -16,8 +16,22 @@ A static, multi-page marketing website for Ubora Services Limited — a Kenyan i
 ├── js/
 │   └── main.js       # Header, mobile menu, reveal, form, filter
 └── images/
-    └── favicon.svg
+    ├── favicon.svg
+    └── photos/            # Branded placeholders — swap for real photos
+        ├── team.svg        # Ubora staff (used in home hero)
+        ├── cleaning.svg
+        ├── fumigation.svg
+        ├── waste.svg
+        └── landscaping.svg
 ```
+
+## Photos
+
+The files in `images/photos/` are tasteful branded **placeholders**. To use real
+photography, drop your image into `images/photos/` and update the matching
+`<img src="…">` (e.g. point `team.svg` → `team.jpg`). Recommended sizes:
+- `team.*` — 800×600 (4:3), home hero
+- service photos — 800×600 (4:3), used on `services.html`
 
 ## Design System
 
