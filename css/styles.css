@@ -1319,6 +1319,27 @@ p { margin: 0 0 1em; }
 }
 .form-success.is-visible { display: block; }
 
+.form-error {
+    display: none;
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    color: #991B1B;
+    padding: 18px;
+    border-radius: var(--r-sm);
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-error.is-visible { display: block; }
+.form-error a { color: #991B1B; font-weight: 700; text-decoration: underline; }
+.form-error a:hover { color: #7F1D1D; }
+
+.form-submit[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
 /* =========================================================
    Photos
    ========================================================= */
