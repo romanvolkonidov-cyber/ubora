@@ -17,21 +17,20 @@ A static, multi-page marketing website for Ubora Services Limited — a Kenyan i
 │   └── main.js       # Header, mobile menu, reveal, form, filter
 └── images/
     ├── favicon.svg
-    └── photos/            # Branded placeholders — swap for real photos
-        ├── team.svg        # Ubora staff (used in home hero)
-        ├── cleaning.svg
-        ├── fumigation.svg
-        ├── waste.svg
-        └── landscaping.svg
+    └── photos/
+        ├── team.webp              # Group photo of Ubora staff
+        ├── cleaning.webp          # Floor polishing in a marble lobby
+        ├── cleaning-vacuum.webp   # Vacuuming an executive office
+        ├── fumigation.webp        # Technician in PPE treating a drain
+        ├── waste.webp             # Branded waste-handling truck
+        └── landscaping.svg        # Branded placeholder (no photo yet)
 ```
 
 ## Photos
 
-The files in `images/photos/` are tasteful branded **placeholders**. To use real
-photography, drop your image into `images/photos/` and update the matching
-`<img src="…">` (e.g. point `team.svg` → `team.jpg`). Recommended sizes:
-- `team.*` — 800×600 (4:3), home hero
-- service photos — 800×600 (4:3), used on `services.html`
+Real photos are used everywhere except landscaping. To add a landscaping photo,
+drop e.g. `images/photos/landscaping.webp` and change the `src` in
+`services.html` from `landscaping.svg` → `landscaping.webp`.
 
 ## Design System
 

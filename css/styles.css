@@ -1386,6 +1386,143 @@ p { margin: 0 0 1em; }
 .team-copy .eyebrow { justify-content: flex-start; }
 
 /* =========================================================
+   Gallery (home — "Our work in action")
+   ========================================================= */
+.gallery-section {
+    background:
+        radial-gradient(circle at 20% 10%, var(--primary-tint) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(254,243,199,0.5) 0%, transparent 50%),
+        var(--white);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 18px;
+}
+.gallery-card {
+    position: relative;
+    margin: 0;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    background: var(--ink);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--t-mid) var(--ease), box-shadow var(--t-mid) var(--ease);
+    min-height: 280px;
+}
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+.gallery-card--wide {
+    grid-row: span 2;
+}
+.gallery-img {
+    position: absolute;
+    inset: 0;
+}
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--t-slow) var(--ease);
+}
+.gallery-card:hover .gallery-img img { transform: scale(1.04); }
+.gallery-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(11,18,32,0.78) 100%);
+    pointer-events: none;
+}
+.gallery-card figcaption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 20px 22px;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.gallery-card strong {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.01em;
+}
+.gallery-card .gallery-meta {
+    font-size: 13px;
+    color: rgba(255,255,255,0.75);
+}
+.gallery-tag {
+    display: inline-flex;
+    align-self: flex-start;
+    background: rgba(255,255,255,0.16);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: var(--r-pill);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.gallery-card--wide strong { font-size: 19px; }
+
+/* About — team photo treatment */
+.about-image--photo {
+    aspect-ratio: 4 / 5;
+    position: relative;
+}
+.about-image--photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+    display: block;
+}
+.about-badge {
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+    background: rgba(15,118,110,0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 18px 22px;
+    border-radius: var(--r-lg);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: var(--shadow-lg);
+}
+.about-badge strong {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: var(--accent);
+    line-height: 1;
+}
+.about-badge span {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.95);
+    line-height: 1.2;
+}
+
+/* =========================================================
    Coverage / geography
    ========================================================= */
 .coverage {
@@ -1478,6 +1615,12 @@ p { margin: 0 0 1em; }
     .team-band,
     .coverage-inner { grid-template-columns: 1fr; }
     .county-grid { grid-template-columns: repeat(4, 1fr); }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .gallery-card--wide { grid-row: auto; grid-column: span 2; min-height: 320px; }
 }
 
 @media (max-width: 760px) {
@@ -1554,6 +1697,24 @@ p { margin: 0 0 1em; }
     .cta-actions .btn { flex: 1 1 auto; justify-content: center; }
 
     .industry-filter button { font-size: 13px; padding: 8px 14px; }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .gallery-card--wide { grid-column: auto; }
+    .gallery-card { min-height: 240px; }
+    .gallery-card--wide { min-height: 280px; }
+
+    .about-image--photo { aspect-ratio: 4 / 5; }
+    .about-badge {
+        left: 14px;
+        bottom: 14px;
+        padding: 14px 16px;
+        gap: 10px;
+    }
+    .about-badge strong { font-size: 34px; }
+    .about-badge span { font-size: 11px; }
 
     .footer-inner { grid-template-columns: 1fr; gap: 32px; }
     .footer-bottom .container { flex-direction: column; text-align: center; }
