@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.uboraservices.co.ke/sitemap.xml
+Sitemap: https://uboraservices.co.ke/sitemap.xml

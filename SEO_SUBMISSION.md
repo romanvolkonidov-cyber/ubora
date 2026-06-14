@@ -6,9 +6,9 @@ Your site is technically ready for Google. To actually start appearing in search
 
 ## 1. Get the site live first
 
-Google can't verify a site that isn't online. Make sure `https://www.uboraservices.co.ke/` (or whatever your final URL is) actually loads in a browser before going further.
+Google can't verify a site that isn't online. Make sure `https://uboraservices.co.ke/` (or whatever your final URL is) actually loads in a browser before going further.
 
-> ⚠️  If the final domain is different from `www.uboraservices.co.ke`, tell me — I need to update `sitemap.xml`, `robots.txt`, the `<link rel="canonical">` tags and the JSON-LD structured data. Otherwise Google will index the wrong URLs.
+> ⚠️  If the final domain is different from `uboraservices.co.ke`, tell me — I need to update `sitemap.xml`, `robots.txt`, the `<link rel="canonical">` tags and the JSON-LD structured data. Otherwise Google will index the wrong URLs.
 
 ---
 
@@ -16,7 +16,7 @@ Google can't verify a site that isn't online. Make sure `https://www.uboraservic
 
 1. Go to <https://search.google.com/search-console>
 2. Click **Add property** (top-left dropdown)
-3. Choose **URL prefix** and enter: `https://www.uboraservices.co.ke/`
+3. Choose **URL prefix** and enter: `https://uboraservices.co.ke/`
    *(or pick "Domain" if you can edit DNS — it covers www + non-www + http + https in one go, but needs a DNS TXT record at your registrar)*
 
 ---
